@@ -28,4 +28,5 @@ pandoc "$1" \
     -V geometry:margin=2cm \
     --highlight-style ~/pandocSimple/pygments.theme \
     --pdf-engine=xelatex \
+	-F mermaid-filter \
     -o "$2"
